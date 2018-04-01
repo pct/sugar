@@ -22,15 +22,15 @@ defmodule Sugar.Mixfile do
 
   defp deps do
     [ { :cowboy, "~> 1.0" },
-      { :plug, "~> 1.0" },
-      { :http_router, "~> 0.10" },
-      { :poison, "~> 3.0" },
+      { :plug, "~> 1.5.0" },
+      { :http_router, "~> 0.10.0" },
+      { :poison, "~> 3.1.0" },
       { :plugs, "~> 0.1" },
-      { :templates, "~> 0.0" },
-      { :earmark, "~> 0.1", only: :docs },
-      { :ex_doc, "~> 0.8", only: :docs },
-      { :excoveralls, "~> 0.3", only: :test },
-      { :dialyze, "~> 0.2", only: :test } ]
+      { :templates, github: "pct/templates" },
+      { :earmark, "~> 1.2.4", only: :docs },
+      { :ex_doc, "~> 0.18.3", only: :docs },
+      { :excoveralls, "~> 0.8.1", only: :test },
+      { :dialyze, "~> 0.2.1", only: :test } ]
   end
 
   defp description do
