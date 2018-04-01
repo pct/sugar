@@ -46,7 +46,7 @@ defmodule Sugar.Request.Parsers.XML do
   defp do_parse_nodes({ :xmlText, _, _, _, value, _ }) do
     string_value = value 
                    |> to_string 
-                   |> String.strip
+                   |> String.trim
     if string_value |> String.length > 0 do
       [ string_value ]
     else
